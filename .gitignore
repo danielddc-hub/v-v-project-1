@@ -1,0 +1,17 @@
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Cocotb and simulation
+sim_build/
+results.xml
+*.vcd
+*.fst
+
+# Editor and operating system
+.vscode/
+.DS_Store
+Thumbs.db
