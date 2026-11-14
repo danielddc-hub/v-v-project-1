@@ -13,6 +13,11 @@ The main areas where AI helped were:
 - reusing the HW6 functional-coverage testbench
 - identifying important FIFO corner cases to verify
 - organizing the verification plan and mutation findings
+- expanding functional coverage from 19 to 36 bins
+- adding coverage for accepted/blocked reads and writes
+- tracking pointer wrap-around and additional coverage crosses
+- measuring coverage convergence
+- adding an assertion for simultaneous read/write at the empty boundary
 
 ## Prompt / Request
 
@@ -27,6 +32,10 @@ The target cases included:
 - pointer wrap-around
 - FIFO ordering
 - seeded constrained-random traffic
+
+I also asked AI to help expand the coverage model to match the verification plan. This included accepted and blocked operations, pointer wrapping, and additional crosses. I also used AI to help track when coverage reached 100% and to add an assertion for simultaneous read/write at the empty boundary.
+
+Example of prompt used: "How do I expand the coverage model to match vplan?"
 
 ## Prediction Before Running
 
@@ -73,6 +82,12 @@ I then replaced it with the HW6 version because that version already included th
 The Makefile also had to be changed because the copied HW6 Makefile assumed it still lived inside `code/tb/`. The Project 1 version was updated so the DUT and Python model paths point back to the course `code/` directory.
 
 The mutation command also required a symlink under `code/tb/` because the course mutation tool assumes testbenches are located under that structure.
+
+The coverage model was expanded from 19 to 36 bins to match the verification plan. I added coverage for accepted and blocked operations, pointer wrapping, and additional crosses.
+
+I also added tracking for the vectors needed to reach full coverage and the number of vectors tested afterward. The expanded model reached 100% coverage without changing the existing random constraints.
+
+Finally, I added an assertion to check simultaneous read/write behavior when the FIFO is empty. The updated testbench passed simulation, and all eight released mutants were still detected.
 
 ## What AI Did Not Prove
 
