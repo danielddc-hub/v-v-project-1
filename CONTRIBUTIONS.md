@@ -1,132 +1,53 @@
-# Contributions — <team name> · <track>
+# Project 1 Contributions
 
-<!-- Capstone, Milestones 1-4. Lives in your team repo root as CONTRIBUTIONS.md.
-     ONE file per team, updated at every milestone — not written at the end.
-     Delete every comment block before you submit. -->
+## Team Members
 
-> This file and the git history are cross-checked against each other, and
-> against every member's confidential peer eval. Where the three disagree, the
-> conversation happens *before* the Professionalism row is scored — so make
-> them agree. A file written the night of M4 will not survive that check, and
-> the way it fails is by being vague.
+- Dylan Hilaire
+- Daniel Delgado
+- Colby Toner
 
-**Members:** <name (NID) · name (NID) · …>
-**Repo:** <URL>
-**Track:** RV32I core / AXI-Lite subsystem / secure_gate
-**Last updated:** <date> · **through milestone:** M__
+## Dylan Hilaire
 
----
+Main focus:
+- Driver and monitor integration.
+- Initial Project 1 testbench setup using the HW4 FIFO environment.
+- Mutation testing and verification of the released mutant pool.
+- Helped organize the verification plan and project findings.
+- Assisted with debugging and getting the CRV environment running in the project structure.
 
-## How to read this file
+## Daniel Delgado
 
-Each milestone section lists what each member owned, with the commits, files, or
-tags that show it. "Helped with the testbench" is not a contribution record.
-"Wrote the constrained-random sequence and its coverage bins — `tb/seq_rw.py`,
-commits `a1b2c3d`..`e4f5g6h`" is.
+Main focus:
+- Scoreboard and golden-model review.
+- Coverage model and coverage-result organization.
+- Shared GitHub repository setup and project file organization.
+- Help with reviewing verification results and preparing the final report.
 
-Work that is genuinely shared gets its own row and says how it was shared
-(pairing, review, a split you can describe). Do not inflate, and do not
-flatten real differences into a polite fiction — an honest record of an uneven
-milestone reads far better than a uniform one nobody believes.
+## Colby Toner
 
----
+Main focus:
+- Constrained-random stimulus and pyvsc constraints.
+- Seeded regression and random stimulus review.
+- Review of near-full, near-empty, simultaneous read/write, and pointer-wrap cases.
+- Help with final report and demo preparation.
 
-## M1 — <due Wk 11>
+## Shared Work
 
-| Member | What they owned | Evidence (commits / files / PRs) | Approx. share |
-|--------|-----------------|----------------------------------|--------------:|
-|        |                 |                                  |               |
-|        |                 |                                  |               |
+The team worked together to:
+- review the FIFO specification,
+- verify the driver, monitor, scoreboard, and constrained-random environment,
+- review coverage results,
+- review mutation-testing results,
+- prepare the final report and demo,
+- make sure the final repository is organized and reproducible.
 
-**Shared or paired work:**
+## Current Verification Results
 
-**What slipped, and who picked it up:**
+- Clean FIFO regression passes.
+- Functional coverage reached the current target.
+- Occupancy × operation cross reached 12/12 bins.
+- Released mutation score reached 8/8 = 100%.
 
-<!-- Every team has a milestone where something slipped. Saying so here, at the
-     time, is what makes the rest of the file credible. -->
+## Evidence
 
-## M2 — <due Wk 12>
-
-| Member | What they owned | Evidence (commits / files / PRs) | Approx. share |
-|--------|-----------------|----------------------------------|--------------:|
-|        |                 |                                  |               |
-
-**Shared or paired work:**
-
-**What slipped, and who picked it up:**
-
-**Changes to the division of labor since M1, and why:**
-
-## M3 — <due Wk 13>
-
-| Member | What they owned | Evidence (commits / files / PRs) | Approx. share |
-|--------|-----------------|----------------------------------|--------------:|
-|        |                 |                                  |               |
-
-**Shared or paired work:**
-
-**What slipped, and who picked it up:**
-
-**Changes to the division of labor since M2, and why:**
-
-## M4 — <due Wk 14, at the `m4` tag>
-
-| Member | What they owned | Evidence (commits / files / PRs) | Approx. share |
-|--------|-----------------|----------------------------------|--------------:|
-|        |                 |                                  |               |
-
-**Shared or paired work:**
-
-**What slipped, and who picked it up:**
-
----
-
-## Whole-project summary
-
-One row per member, across all four milestones. This is the row a reader checks
-first, so it must be consistent with the four sections above.
-
-| Member | Principal contributions (all four milestones) | Overall share |
-|--------|-----------------------------------------------|--------------:|
-|        |                                               |               |
-|        |                                               |               |
-
-**The three things this team did that we would each defend in an interview:**
-
-1.
-2.
-3.
-
-## Non-code contributions
-
-Real work that leaves a thin git trace — and is graded all the same. Cite the
-artifact where one exists.
-
-| Member | Contribution | Where it shows |
-|--------|--------------|----------------|
-|        | spec archaeology / vplan authorship / debugging sessions / demo prep / review | |
-
-## AI assistance
-
-Consistent with the course policy and your `ctm` record: name where an assistant
-was used on capstone work, and who verified the output. The verifier is a named
-person, always.
-
-| Where | Used for | Verified by | Where the verification shows |
-|-------|----------|-------------|------------------------------|
-|       |          |             |                              |
-
----
-
-## Attestation
-
-- [ ] Every claim above can be traced to the repo history.
-- [ ] This file was updated at each milestone, not reconstructed at the end.
-- [ ] Every member has read this file and agrees it is accurate.
-- [ ] Each member has separately submitted their **confidential individual peer
-      eval** — teammates' main contributions, an equity judgment, one sentence
-      of evidence each — outside this repo, by the M4 deadline.
-
-<!-- The peer eval is individual and confidential. It does NOT go in the repo,
-     and it is not this file. A missing eval is a professionalism problem of
-     its own, independent of how good the project is. -->
+Team members should add their final GitHub commits, files, or pull requests before submission so the contribution record matches the repository history.
